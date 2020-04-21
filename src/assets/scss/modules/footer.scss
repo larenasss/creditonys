@@ -1,0 +1,20 @@
+.footer {
+  background: rgba(180, 203, 220, .25);
+  flex: 0 0 auto;
+}
+
+.footer__content {
+  padding: 16px 0 24px 0;
+
+  @include phones {
+    padding: 18px 0 24px 0;
+  }
+}
+
+.footer__menu {
+  padding: 0 14px;
+
+  @include phones {
+    padding: 0;
+  }
+}

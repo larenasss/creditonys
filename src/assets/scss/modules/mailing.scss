@@ -1,0 +1,78 @@
+.mailing__content {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.mailing__left {
+  padding: 0 10%;
+  
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.mailing__form {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #C2E6FA;
+    box-shadow: 13px -13px 2px rgba(255, 220, 101, 0.5);
+    border-radius: 500px;
+    width: 511px;
+    height: 511px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+.mailing__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: -60px;
+  padding: 64px 0 10px 0;
+
+  @include tablets {
+    width: 100%;
+    margin-bottom: 35px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
+  
+}
+
+.mailing__title {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 30px;
+
+  @include phones {
+    font-size: 20px;
+  }
+}
+
+.mailing__description {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+}

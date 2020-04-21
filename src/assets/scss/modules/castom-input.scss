@@ -1,0 +1,58 @@
+.castom-input {
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 5;
+  display: block;
+  font-size: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    .castom-input__item {
+      border: 2px solid #78A6C9;
+      cursor: url('../../img/icons/cursor.png'), pointer;
+      transition: .3s ease-in-out;
+    }
+
+    .castom-input__icon {
+      fill: #78A6C9;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  &:focus-within {
+    .castom-input__item {
+      border: 2px solid #4584B4;;
+      cursor: url('../../img/icons/cursor.png'), pointer;
+      transition: .3s ease-in-out;
+    }
+
+    .castom-input__icon {
+      fill: #4584B4;
+      transition: .3s ease-in-out;
+    }
+  }
+}
+
+.castom-input__item {
+  background: #FBFCFC;
+  border: 2px solid #B4CBDC;
+  border-radius: 2px;
+  padding: 8px 12px;
+  width: 100%;
+
+
+}
+
+.castom-input__icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  fill: #B4CBDC;
+}

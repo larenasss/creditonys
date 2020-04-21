@@ -1,0 +1,88 @@
+.form {
+  border: 2px solid rgba(180, 203, 220, 0.5);
+  box-shadow: 0px 5px 20px rgba(0, 50, 97, 0.15), 0px 7px 10px rgba(0, 50, 97, 0.1);
+  border-radius: 8px;
+  background: #FFFFFF;
+  max-width: 350px;
+  position: relative;
+
+  &--mobile {
+    border: none;
+  }
+
+  @include phones {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.form__content {
+  position: relative;
+  padding: 32px 20px;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+
+  &.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
+
+.form__title {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #E6E9EB;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.form__body {
+  border-bottom: 2px solid #E6E9EB;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.form__desc {
+  margin-bottom: 24px;
+}
+
+.form__desc p {
+  font-size: 19px;
+}
+
+.form__inputs {
+  margin-bottom: 24px;
+}
+
+.form__footer {
+  font-size: 14px;
+  display: flex;
+}
+
+.form__footer-desc {
+  margin-left: 10px;
+}
+
+.form__footer-link {
+  text-decoration: underline;
+}
+
+.form__overlay {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s, visibility 0s linear 0.1s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}
+.form__btn {
+  position: relative;
+}

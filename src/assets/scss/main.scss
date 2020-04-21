@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import "../../../node_modules/normalize.css/normalize.css";
+
+@import "utils/mixins.scss";
+@import "utils/base.scss";
+
+@import "./modules/header.scss";
+@import "./modules/logo.scss";
+@import "./modules/menu.scss";
+@import "./modules/loans.scss";
+@import "./modules/credit.scss";
+@import "./modules/btn.scss";
+@import "./modules/mailing.scss";
+@import "./modules/form.scss";
+@import "./modules/castom-input.scss";
+@import "./modules/checkbox.scss";
+@import "./modules/checkbox.scss";
+@import "./modules/overlay.scss";
+@import "./modules/loader.scss";
+@import "./modules/footer.scss";

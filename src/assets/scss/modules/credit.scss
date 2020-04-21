@@ -1,0 +1,133 @@
+.credit {
+  position: relative;
+}
+
+.credit__mailing {
+  display: none;
+
+  @include phones {
+    display: block;
+  }
+}
+
+.credit__mailing-body {
+  margin-bottom: 65px;
+  position: relative;
+
+  &::before {
+    border-radius: 500px;
+    width: 511px;
+    height: 511px;
+    top: -50%;
+  }
+}
+
+.credit__mailing-title {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.credit__mailing-btn {
+  font-size: 16px;
+  font-weight: bold;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(0, 50, 97, 0.15), 0px 7px 10px rgba(0, 50, 97, 0.1);
+  border-radius: 6px;
+  height: 62px;
+  padding: 20px 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+  &.active {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8%;
+    transform: rotate(-45deg);
+  }
+}
+
+.credit__mailing-form {
+  padding: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  height: 0;
+
+  &.active {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: .4s ease-in-out;
+    height: 440px;
+  }
+}
+
+.credit__greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 32px;
+  background: #FFD876;
+  border-radius: 30px;
+  margin-bottom: 24px;
+
+  @include phones {
+    position: relative;
+    border-radius: 0 30px 30px 0;
+    left: -60px;
+    margin-bottom: 6px;
+  }
+
+  @include phonesX {
+    left: -28px;
+  }
+}
+
+.credit__description {
+  margin-bottom: 48px;
+  width: 55%;
+  line-height: 1.35;
+
+  @include tablets {
+    width: 90%;
+  }
+
+  @include phones {
+    width: 80%;
+    margin-bottom: 20px;
+    line-height: 122.2%;
+  }
+}
+
+.credit__description span {
+
+  @include tablets {
+    margin-top: 24px;
+    display: block;
+  }
+}

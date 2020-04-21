@@ -1,0 +1,39 @@
+.checkbox input {
+  display: none;
+  z-index: -1;
+}
+
+.checkbox__castom {
+  min-width: 20px;
+  height: 20px;
+  background: #FBFCFC;
+  border: 2px solid #B4CBDC;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+
+  
+  &::after {
+    content: "";
+    left: 2.4px;
+    top: 3px;
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    border-radius: 1px;
+    border-left: 3px solid #4eaaff;
+    border-bottom: 3px solid #4eaaff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+}
+
+.checkbox input:checked + .checkbox__castom::after {
+  opacity: 1;
+  transition: .2s ease-in-out;
+}

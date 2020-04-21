@@ -1,0 +1,96 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #272727;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+	flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1130px;
+  padding: 0 16px;
+
+  @include phones {
+    padding: 0 12%;
+  }
+
+  @include phonesX {
+    padding: 0 16px;
+  }
+}
+
+.main {
+  margin-bottom: 122px;
+  flex: 1 0 auto;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  //width: 100%;
+}
+
+input {
+  outline: none;
+}
+
