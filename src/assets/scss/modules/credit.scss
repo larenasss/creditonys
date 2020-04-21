@@ -79,7 +79,7 @@
   &.active {
     opacity: 1;
     transform: scaleY(1);
-    transition: .4s ease-in-out;
+    transition: all .4s ease-in-out;
     height: 440px;
   }
 }
@@ -101,6 +101,7 @@
     border-radius: 0 30px 30px 0;
     left: -60px;
     margin-bottom: 6px;
+    height: 60px;
   }
 
   @include phonesX {
